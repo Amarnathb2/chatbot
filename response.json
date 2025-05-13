@@ -11,6 +11,14 @@
         {
             "input": "hey",
             "response": "Hey! What's up?"
+        },
+        {
+            "input": "how are you",
+            "response": "I'm doing great, thanks for asking! How about you?"
+        },
+        {
+            "input": "how's it going",
+            "response": "All good! How about you?"
         }
     ],
     "farewells": [
@@ -25,6 +33,20 @@
         {
             "input": "goodbye",
             "response": "Goodbye! It was nice chatting with you!"
+        }
+    ],
+    "personal_queries": [
+        {
+            "input": "what's your name",
+            "response": "I'm your friendly chatbot! What's your name?"
+        },
+        {
+            "input": "who are you",
+            "response": "I'm a chatbot here to assist you! How can I help?"
+        },
+        {
+            "input": "what's going on",
+            "response": "Not much, just here to chat with you! What's going on with you?"
         }
     ],
     "default": "Sorry, I don't understand that."
