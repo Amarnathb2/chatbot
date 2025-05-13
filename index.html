@@ -1,0 +1,20 @@
+<input id="userInput" placeholder="Say something..." />
+<button onclick="sendMessage()">Send</button>
+<div id="chatBox"></div>
+
+<script>
+function sendMessage() {
+  const message = document.getElementById("userInput").value;
+  fetch("http://localhost:5000/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ user_input: message })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("chatBox").innerHTML += `<p><b>You:</b> ${message}</p>`;
+    document.getElementById("chatBox").innerHTML += `<p><b>Bot:</b> ${data.reply}</p>`;
+    document.getElementById("userInput").value = "";
+  });
+}
+</script>
