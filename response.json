@@ -1,0 +1,31 @@
+{
+    "greetings": [
+        {
+            "input": "hello",
+            "response": "Hi there! How can I help you?"
+        },
+        {
+            "input": "hi",
+            "response": "Hello! How can I assist you today?"
+        },
+        {
+            "input": "hey",
+            "response": "Hey! What's up?"
+        }
+    ],
+    "farewells": [
+        {
+            "input": "bye",
+            "response": "Goodbye! Have a great day!"
+        },
+        {
+            "input": "see you",
+            "response": "Take care! See you soon!"
+        },
+        {
+            "input": "goodbye",
+            "response": "Goodbye! It was nice chatting with you!"
+        }
+    ],
+    "default": "Sorry, I don't understand that."
+}
